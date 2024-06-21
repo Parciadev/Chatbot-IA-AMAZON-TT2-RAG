@@ -12,7 +12,7 @@ def hr_index():
     #2. Define the data source and load data with PDFLoader
     data_load=PyPDFLoader('https://vrac.utem.cl/wp-content/uploads/2021/05/reglamento-general-de-los-estudiantes-de-pregrado.pdf')
     #3. Split the Text based on Character, Tokens etc. - Recursively split by character - ["\n\n", "\n", " ", ""]
-    data_split=RecursiveCharacterTextSplitter(separators=["\n\n", "\n", " ", ""], chunk_size=100,chunk_overlap=10)
+    data_split=RecursiveCharacterTextSplitter(separators=["\n\n", "\n", " ", ""], chunk_size=1000,chunk_overlap=150)
     #4. Create Embeddings -- Client connection
     data_embeddings=BedrockEmbeddings(
     credentials_profile_name= 'default',

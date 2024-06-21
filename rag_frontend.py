@@ -3,6 +3,7 @@ import streamlit as st
 import rag_backend as demo ### replace rag_backend with your backend filename
 
 st.set_page_config(page_title="HR Q & A Prototipo-Utemsito-Chatbot") ### Modify Heading
+st.image ("UTEM.png", use_column_width = True)
 
 new_title = '<p style="font-family:sans-serif; color:Green; font-size: 42px;">HR Q & A Prototipo-Utemsito-Chatbot 🎯</p>'
 st.markdown(new_title, unsafe_allow_html=True) ### Modify Title
